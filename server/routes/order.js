@@ -8,7 +8,6 @@ router.get('/admin/myorders',isSignedIn,isAdmin,getAdminOrder);
 router.put('/:id/pay',isSignedIn,payOrder);
 router.put('/:id/deliver',isSignedIn,isAdmin,updateOrderToDelivered);
 router.get('/:id',isSignedIn,getOrderById);
-
 router.post('/createorder',createOrderPayment);
 
 module.exports=router;
