@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon server/server.js",
     "start": "node server/server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "client": "npm start --prefix client",
+    "clientinstall": "npm install --prefix client",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=falsenpm install --prefix client && npm run build -- prefix client"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
